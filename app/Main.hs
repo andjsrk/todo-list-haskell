@@ -2,8 +2,7 @@ module Main where
 
 import Happstack.Server
 import Control.Exception (try)
-import Data.Aeson (encodeFile, decode, decodeFileStrict)
-import Data.Either (fromRight, fromLeft)
+import Data.Aeson (encodeFile, decodeFileStrict)
 import Data.IORef (newIORef, readIORef, writeIORef)
 import Data.Maybe (fromMaybe)
 import Routes
