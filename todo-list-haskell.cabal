@@ -1,0 +1,18 @@
+cabal-version: 2.4
+name:          todo-list-haskell
+version:       0.1.0.0
+
+executable todo-list-haskell
+  main-is: Main.hs
+  ghc-options: -w
+  other-modules:
+    Routes,
+    Page
+
+  build-depends:
+    base ^>=4.14.3.0,
+    happstack-server >=7.8.0 && <7.9,
+    blaze-html >=0.9.1 && <0.10,
+    aeson >=2.2.0 && <2.3
+  hs-source-dirs: app
+  default-language: Haskell2010
